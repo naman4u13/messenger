@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "874754843716",
+    "firebase_url": "https://messenger-313e0.firebaseio.com",
+    "project_id": "messenger-313e0",
+    "storage_bucket": "messenger-313e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874754843716:android:2ca6fa96c211a356",
+        "android_client_info": {
+          "package_name": "com.example.hp.messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874754843716-kfhddmikbdt3t21abulvhlcp1qrit5c7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hp.messenger",
+            "certificate_hash": "cfc8a2e2baea67887f32a142490deca37e72d196"
+          }
+        },
+        {
+          "client_id": "874754843716-2c32tpod63a7mvpajrh1o8t4sk7aultk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmIF7WLJ_2d8XSR92t7rdgtSbXkg2czAw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874754843716-2c32tpod63a7mvpajrh1o8t4sk7aultk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
