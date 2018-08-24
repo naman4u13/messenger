@@ -64,8 +64,8 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
         database = FirebaseDatabase.getInstance();
-        myRef = database.getReference();
-        DatabaseReference childref = database.getReference("USERS");
+        myRef = database.getReference("USERS");
+
         mUsername = ANONYMOUS;
 
 
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
         mMessageListView.setAdapter(mMessageAdapter);
 
-        childref.addChildEventListener(new ChildEventListener() {
+        myRef.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 FriendlyMessage obj = dataSnapshot.getValue(FriendlyMessage.class);
@@ -194,7 +194,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String msg = String.valueOf(mMessageEditText.getText());
                 FriendlyMessage obj = new FriendlyMessage(msg,mUsername,null);
-                myRef.child("USERS").push().setValue(obj);
+                myRef.push().setValue(obj);
 
 
 
